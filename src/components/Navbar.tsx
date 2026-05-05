@@ -42,30 +42,33 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
-          Logo
-        </a>
+        <div className="navbar-brand">
+          <a href="/#" className="navbar-title" data-cursor="disable">
+            Logo
+          </a>
+          <span className="navbar-tagline">Un diseñador y desarrollador creativo</span>
+        </div>
         <a
-          href="mailto:example@mail.com"
+          href="mailto:miguel.astorga.diaz@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          example@mail.com
+          miguel.astorga.diaz@gmail.com
         </a>
         <ul>
           <li>
             <a data-href="#about" href="#about">
-              <HoverLinks text="ABOUT" />
+              <HoverLinks text="SOBRE MÍ" />
             </a>
           </li>
           <li>
             <a data-href="#work" href="#work">
-              <HoverLinks text="WORK" />
+              <HoverLinks text="TRABAJO" />
             </a>
           </li>
           <li>
             <a data-href="#contact" href="#contact">
-              <HoverLinks text="CONTACT" />
+              <HoverLinks text="CONTACTO" />
             </a>
           </li>
         </ul>

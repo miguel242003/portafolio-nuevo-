@@ -34,7 +34,7 @@
 }
 .what-box-in {
   flex-direction: column;
-  height: 500px;
+  height: 620px;
   margin-left: 200px;
   position: relative;
   display: none;
@@ -199,7 +199,7 @@
   animation: whatBorders 1.2s 1 forwards;
 }
 .what-border2 svg {
-  height: 500px;
+  height: 620px;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
@@ -249,7 +249,7 @@
     margin-right: 20%;
   }
   .what-box-in {
-    height: 400px;
+    height: 520px;
   }
   .what-content h3 {
     font-size: 28px;
@@ -326,7 +326,7 @@
     justify-content: left;
   }
   .what-box:last-child {
-    height: 500px;
+    height: 620px;
   }
   .what-box {
     width: 500px;
@@ -338,7 +338,7 @@
   }
   .what-box-in {
     margin-left: 0px;
-    height: 450px;
+    height: 570px;
   }
   .what-content h5,
   .what-content-flex {
@@ -383,6 +383,17 @@
   .what-box {
     max-width: calc(100% - 25px);
     margin: 0;
+  }
+  .what-box h2 {
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  .what-box:last-child {
+    height: 520px;
+  }
+  .what-box-in {
+    height: 520px;
   }
 }
 @media only screen and (min-width: 1950px) {

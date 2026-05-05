@@ -219,7 +219,7 @@
 h2.landing-info-h2 {
   color: #c481ff;
   font-size: 42px;
-  width: 120%;
+  width: 100%;
   margin: 0;
   font-family: "Geist", sans-serif;
   font-weight: 600;
@@ -267,6 +267,7 @@ h2.landing-info-h2 {
   }
   h2.landing-info-h2 {
     font-size: 38px;
+    width: 120%;
   }
 }
 @media screen and (min-width: 768px) {

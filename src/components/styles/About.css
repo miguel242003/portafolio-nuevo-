@@ -16,21 +16,29 @@
   max-width: calc(100% - 15px);
 }
 .about-me h3 {
-  font-size: 25px;
+  font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
   font-weight: 400;
   color: var(--accentColor);
 }
 
 .about-me p {
-  font-size: 33px;
+  font-size: 22px;
   font-weight: 600;
-  line-height: 36px;
+  line-height: 28px;
   letter-spacing: 1px;
 }
 
 @media only screen and (min-width: 600px) {
+  .about-me h3 {
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
+  .about-me p {
+    font-size: 28px;
+    line-height: 32px;
+  }
   .about-section {
     justify-content: center;
   }

@@ -5,8 +5,8 @@ const Career = () => {
     <div className="career-section section-container">
       <div className="career-container">
         <h2>
-          My career <span>&</span>
-          <br /> experience
+          Mi carrera <span>&</span>
+          <br /> experiencia
         </h2>
         <div className="career-info">
           <div className="career-timeline">
@@ -15,43 +15,39 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Desarrollador Web Full Stack</h4>
+                <h5>Gisa-nqn (Argentina)</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Diseño y desarrollo integral de un sitio web corporativo para administración inmobiliaria. Implementé una arquitectura responsiva y optimizada, gestionando directamente el levantamiento de requerimientos y la entrega final del producto.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Cargo en la empresa</h4>
+                <h5>Nombre de la empresa</h5>
               </div>
               <h3>20XX</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Descripción de responsabilidades y logros alcanzados durante
+              este período en la organización.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Cargo en la empresa</h4>
+                <h5>Nombre de la empresa</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>HOY</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Descripción de responsabilidades y logros alcanzados durante
+              este período en la organización.
             </p>
           </div>
         </div>
