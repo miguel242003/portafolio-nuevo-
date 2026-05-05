@@ -7,6 +7,8 @@ interface Props {
   alt?: string;
   video?: string;
   link?: string;
+  onLightboxOpen?: () => void;
+  onLightboxClose?: () => void;
 }
 
 const WorkImage = (props: Props) => {
@@ -49,15 +51,15 @@ const WorkImage = (props: Props) => {
         <img
           src={props.image}
           alt={props.alt}
-          onClick={(e) => { e.preventDefault(); setLightbox(true); }}
+          onClick={(e) => { e.preventDefault(); setLightbox(true); props.onLightboxOpen?.(); }}
           style={{ cursor: "zoom-in" }}
         />
         {isVideo && <video src={video} autoPlay muted playsInline loop></video>}
       </a>
 
       {lightbox && createPortal(
-        <div className="work-lightbox" onClick={() => setLightbox(false)}>
-          <button className="work-lightbox-close" onClick={() => setLightbox(false)}>
+        <div className="work-lightbox" onClick={() => { setLightbox(false); props.onLightboxClose?.(); }}>
+          <button className="work-lightbox-close" onClick={() => { setLightbox(false); props.onLightboxClose?.(); }}>
             <MdClose />
           </button>
           <img

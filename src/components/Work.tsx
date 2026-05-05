@@ -31,6 +31,7 @@ const Work = () => {
   const [fading, setFading] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const currentRef = useRef(current);
+  const pausedRef = useRef(false);
   currentRef.current = current;
 
   const goTo = (index: number) => {
@@ -49,11 +50,27 @@ const Work = () => {
   const next = () =>
     goTo((currentRef.current + 1) % projects.length);
 
-  const restartTimer = () => {
+  const stopTimer = () => {
     if (timerRef.current) clearInterval(timerRef.current);
+    timerRef.current = null;
+  };
+
+  const restartTimer = () => {
+    stopTimer();
+    if (pausedRef.current) return;
     timerRef.current = setInterval(() => {
       goTo((currentRef.current + 1) % projects.length);
     }, INTERVAL);
+  };
+
+  const pauseCarousel = () => {
+    pausedRef.current = true;
+    stopTimer();
+  };
+
+  const resumeCarousel = () => {
+    pausedRef.current = false;
+    restartTimer();
   };
 
   useEffect(() => {
@@ -84,7 +101,12 @@ const Work = () => {
             <h4>Tecnologías y características</h4>
             <p>{project.tech}</p>
           </div>
-          <WorkImage image={project.image} alt={project.name} />
+          <WorkImage
+            image={project.image}
+            alt={project.name}
+            onLightboxOpen={pauseCarousel}
+            onLightboxClose={resumeCarousel}
+          />
         </div>
 
         <div className="work-nav">
