@@ -1,65 +1,54 @@
-# My Portfolio Website - Overview 🚀
+# Miguel Astorga — Portfolio 🚀
 
-This repository contains the open-source version of my personal portfolio website.  
-Feel free to explore the code and use it for learning and inspiration.
-
----
-
-## ⚠️ Usage Notice
-
-This project is shared for learning purposes only.
-
-Please do NOT:
-- Clone or replicate the full website or design
-- Repost it with minor content changes
-- Use this project for commercial/client work
-- Create tutorials or content using this exact project
-
-If you use parts of the code, you must provide proper credit linking back to the original repository.
-
-Build your own version — don’t just copy.
-
-— Moncy Yohannan
-
----
-
-## 🛠️ Instructions
-
-I have modified the GSAP Club plugins using trial versions.  
-⚠️ Note: Trial plugins cannot be used for production or hosting.
-
-For official GSAP Club plugins, refer here:  
-https://gsap.com/docs/v3/Installation/
+Este repositorio contiene el código fuente de mi sitio portfolio personal, construido con React, TypeScript y Three.js, con un personaje 3D interactivo y animaciones GSAP a lo largo del scroll.
 
 ---
 
 ## ⚙️ Tech Stack
 
-React • TypeScript • GSAP • Three.js • WebGL • HTML • CSS • JavaScript
+- **Framework:** React 18 + TypeScript 5
+- **Build:** Vite 5
+- **3D:** Three.js, @react-three/fiber, @react-three/drei, @react-three/cannon, @react-three/rapier
+- **Animación:** GSAP 3 (ScrollTrigger, ScrollSmoother), @gsap/react
+- **Estilos:** CSS por componente
+- **Íconos:** react-icons
+- **Analytics:** @vercel/analytics
 
----
+## 🧩 Estructura del proyecto
 
-## 🎨 Assets Usage
+```
+src/
+  components/            # Secciones del sitio y componentes UI
+    Character/           # Personaje 3D (Three.js + DRACO + GLTF, modelo cifrado)
+    utils/                # Utilidades de scroll GSAP, text split, efectos iniciales
+  context/                # LoadingProvider
+  data/                   # Datos del esqueleto/huesos del modelo 3D
+```
 
-Some 3D assets included in this repository are free to use for learning purposes.
+Secciones principales del sitio: Landing, About, WhatIDo, Career, TechStack, Work, Contact — con navegación (Navbar), cursor custom, íconos sociales y un loader animado.
 
-However:
+## 🛠️ Cómo correr el proyecto
 
-- The original 3D avatar used on my live portfolio is NOT included in this repository
-- That avatar is a custom asset created over ~1 month
-- It is not open source and not available for reuse
+Este proyecto usa `pnpm`.
 
-Any usage, extraction, or redistribution of that avatar from my live website is strictly prohibited.
+```bash
+pnpm install
+pnpm dev       # entorno de desarrollo
+pnpm build     # build de producción
+pnpm preview   # previsualizar el build
+pnpm lint      # linting
+```
 
----
+⚠️ Las plugins de GSAP incluidas son versiones trial (`gsap-trial`) y no deben usarse en producción/hosting. Para las plugins oficiales de GSAP Club: https://gsap.com/docs/v3/Installation/
 
-![Protfolio-Preview](https://github.com/user-attachments/assets/3c4557e7-6392-4928-b8a9-7b2476ef4edd)
+## 🎨 Assets
 
----
+El avatar 3D original que aparece en mi portfolio en vivo es un asset propio, no incluido públicamente y no reutilizable sin permiso.
 
-## 📄 License
+## 🙏 Créditos
 
-This project is licensed under the Personal Portfolio License (PPL) v1.0.
+Este proyecto está basado en el template open-source de [Moncy Yohannan](https://www.moncy.dev), publicado bajo la Personal Portfolio License (PPL) v1.0. Ver [LICENSE](LICENSE) para los términos completos.
 
-See the LICENSE file for full details
+## 📄 Licencia
 
+Este proyecto se distribuye bajo la Personal Portfolio License (PPL) v1.0. Ver el archivo [LICENSE](LICENSE) para más detalles.
