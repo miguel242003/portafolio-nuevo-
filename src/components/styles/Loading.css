@@ -197,9 +197,14 @@
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.2px;
+  background-color: #000;
+  border-radius: 8px;
+  padding: 4px 10px;
+  display: inline-flex;
+  align-items: center;
 }
 .loader-title img {
-  height: 36px;
+  height: 52px;
   width: auto;
   display: block;
 }
