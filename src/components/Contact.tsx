@@ -16,8 +16,8 @@ const Contact = () => {
             </p>
             <h4>Teléfono</h4>
             <p>
-              <a href="tel:+9199999999" data-cursor="disable">
-                +91 99999 99999
+              <a href="tel:+56974003341" data-cursor="disable">
+                +56 9 7400 3341
               </a>
             </p>
           </div>
@@ -39,15 +39,7 @@ const Contact = () => {
             >
               Linkedin <MdArrowOutward />
             </a>
-            <a
-              href="https://x.com"
-              target="_blank"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Twitter <MdArrowOutward />
-            </a>
-            <a
+<a
               href="https://www.instagram.com/migueloscar2411/?hl=es"
               target="_blank"
               data-cursor="disable"

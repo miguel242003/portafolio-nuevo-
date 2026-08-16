@@ -6,7 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">Sobre mí</h3>
         <p className="para">
-          Soy Ingeniería en Informática con un fuerte enfoque en el desarrollo
+          Soy Ingeniero en Informática con un fuerte enfoque en el desarrollo
           Full Stack y la gestión de bases de datos. Me apasiona transformar
           problemas complejos en soluciones técnicas eficientes, utilizando
           herramientas como Django, React y arquitecturas de Big Data. Cuento
